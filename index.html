@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c740cf1ff.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Challenge Oracle ONE</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="Alura Challenge">
+        </div>
+        <div class="container_menu">
+            <div class="menu">
+                <input type="checkbox" name="check__menu" id="check__menu">
+                <label id="label__check__menu" for="check__menu">
+                    <i class="fas fa-bars icon__menu"></i>
+                </label>
+                <nav>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Encriptador</a>
+                            <ul>
+                                <li><a href="#">Iniciar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div id="divAreaTexto">
+                <h2 class="titulo__textoEncriptar">Ingrese el texto aquí</h2>
+                <textarea name="textoEncriptar" id="textoEncriptar" cols="30" rows="10"></textarea>
+            </div>
+            <div class="divBotonesEncriptar">
+                <p>Solo letras minúsculas y sin acentos</p>
+                <button id="encriptar">
+                    Encriptar
+                </button>
+                <button id="desencriptar">
+                    Desencriptar
+                </button>
+            </div>
+        </article>
+        <article>
+            <div class="textoEncontrado">
+                <h2 class="titulo__textoEncriptar">Texto encriptado</h2>
+                <textarea name="textoEncriptar" id="textoEncriptar" cols="30" rows="10"></textarea>
+            </div>
+            <div class="divBotonescopiar">
+                <button id="copiar">
+                    Copiar
+                </button>
+            </div>
+            <div class="textoNoEnontrado">
+                <div id="ImgMunieco">
+                    <img src="img/munieco.svg" alt="">
+                </div>
+                <div class="textoMunieco" id="textoMunieco">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div id="DatosDesarrollador">
+            <p>@Christianvera - 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
