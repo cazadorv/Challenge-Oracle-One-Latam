@@ -1,4 +1,8 @@
 (function() {
+    var divNoEncontrado = document.getElementById('divNoEncontrado');
+    var divEncriptar = document.getElementById('divEncriptar');
+    divEncriptar.style.display = 'none';
+    divNoEncontrado.style.display = '';
     /* capturamos el boton encriptar y le agregamos un evento de click */
     let btnEncriptar = document.getElementById('btnEncriptar');
     btnEncriptar.addEventListener('click',Encriptar);
@@ -33,6 +37,8 @@
             textoEncriptar = textoEncriptar.replace('u','ufat');
             
             textoEncriptado.value = textoEncriptar;
+            divEncriptar.style.display = '';
+            divNoEncontrado.style.display = 'none';
             document.getElementById('textoEncriptar').value = '';            
         }
     }
