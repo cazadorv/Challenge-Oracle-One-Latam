@@ -51,7 +51,12 @@
         if (textoEncriptado == '' || textoEncriptado == null) {
             alert('No existen datos a desencriptar')
         } else {
-            textoEncriptar.value = textoEncriptado.replace('enter','e').replace('imes','i').replace('ai','a').replace('ober','o').replace('ufat','u');
+            textoEncriptar.value = textoEncriptado
+            .replaceAll('ufat','u')
+            .replaceAll('ober','o')
+            .replaceAll('ai','a')
+            .replaceAll('imes','i')
+            .replaceAll('enter','e');
             document.getElementById('textoEncriptado').value = '';
         }
     }
